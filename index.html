@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Custom styles to override Bootstrap */
+        *{
+          scroll-behavior: smooth;
+        }
+        body {
+            background-color: #2b2d42;
+            font-family: 'Poppins', sans-serif;
+            color: #edf2f4;
+            background-image: url('bg.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            padding: 20px;
+        }
+        html{
+            scroll-behavior: smooth;
+        }
+
+        header {
+            background-color: #8d99ae;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        nav .leftbox {
+            font-size: 2rem;
+            color: #ef233c;
+        }
+
+        nav .rightbox ul li a {
+            color: black;
+            font-size: 20px;
+            text-decoration: none;
+        }
+
+        nav .rightbox ul li a:hover {
+            color: rgb(194, 251, 5);
+        }
+
+        .section {
+            padding: 60px 0;
+        }
+
+        .leftsection h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        #element {
+            color: #ef233c;
+        }
+
+        .leftsection p {
+            font-size: 1.5rem;
+        }
+
+        .rightsection img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+
+        #about, #education, #projects, #contact,#skills{
+            background-color: #edf2f4;
+            color: black;
+            padding: 50px 20px;
+            margin-top: 100px;
+            border-radius: 10px;
+            font-size: 20px;
+            text-align: center;
+            
+        }
+
+        #about img {
+            width: 100%;
+            max-width: 300px;
+            border-radius: 10px;
+            margin: 10px auto;
+        }
+
+        .skill img {
+            border-radius: 50%;
+        }
+
+        #projects ul, .social-icons {
+            list-style-type: none;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+
+        #projects ul li a, .social-icons a {
+            text-decoration: none;
+            font-size: 1.2rem;
+            color: chocolate;
+        }
+
+        #projects ul li a:hover, .social-icons a:hover {
+            color: rgb(216, 141, 141);
+        }
+
+        .social-icons img {
+            width: 40px;
+            height: 40px;
+            transition: transform 0.2s;
+        }
+        .social-icons
+        {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .social-icons img:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand leftbox" href="#"><b>My Portfolio</b></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto rightbox">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section id="home" class="section row">
+            <div class="col-md-6 text-center leftsection">
+                <h1>Hi, I am <span class="text-danger">A Pradeep Kumar</span></h1>
+                <p>I am excited as a <span id="element">Web Developer.</span></p>
+            </div>
+            <div class="col-md-6 text-center rightsection">
+                <img src="me.jpg" alt="Image" class="img-fluid rounded">
+            </div>
+        </section>
+
+        <section id="about">
+            <div class="container">
+                <h1 class="text-center"><u>About Me:</u></h1>
+                <p class="text-center"><strong>My name is A Pradeep Kumar. I am a CSE student pursuing B.Tech at SRM-AP University to secure a high position in software development. I am passionate about coding and aspire to secure high-paying jobs.</strong></p>
+                <img src="me.jpg" alt="My Picture" class="img-fluid rounded mx-auto d-block">
+            </div>
+        </section>
+
+        <section id="skills" >
+            <div class="container">
+                <h2 class="text-center"><u>Skills:</u></h2>
+                <div class="row justify-content-center">
+                    <div class="col-md-2 text-center">
+                        <span>HTML</span>
+                        <img src="https://t4.ftcdn.net/jpg/04/18/60/19/360_F_418601991_Jvt0aZrBDxgbd5EJR1UyKXHvO9Q1mSBw.jpg" alt="HTML" class="img-fluid rounded-circle">
+                    </div>
+                    <div class="col-md-2 text-center">
+                        <span>CSS</span>
+                        <img src="https://cdn.freebiesupply.com/logos/large/2x/css3-logo-svg-vector.svg" alt="CSS" class="img-fluid rounded-circle">
+                    </div>
+                    <div class="col-md-2 text-center">
+                        <span>JavaScript</span>
+                        <img src="https://tse4.mm.bing.net/th?id=OIP.PHBTJoshbg880IH9z_PB6QAAAA&pid=Api&P=0&h=180" alt="Java" class="img-fluid rounded-circle">
+                    </div>
+                    <div class="col-md-2 text-center">
+                        <span>C</span>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrSpxt0HiQycjURUQjzv01pW07So33sTalmK1vqAOZKJ9B8mK2GwBp3wx3TZZRE8oYI7w&usqp=CAU" alt="C" class="img-fluid rounded-circle">
+                    </div>
+                    <div class="col-md-2 text-center">
+                        <span>C++</span>
+                        <img src="https://image.shutterstock.com/image-photo/image-260nw-1764554240.jpg" alt="C++" class="img-fluid rounded-circle">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="education">
+            <div class="container text-center">
+                <h2><U>Education</U></h2>
+                <ul class="list-unstyled">
+                    <li><strong>Bachelor of Technology - CSE<br>SRM University AP</strong></li>
+                    <li><strong>Inter MPC - Narayana Junior College, Vijayawada.<br>Percentage: 93%</strong></li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="projects" >
+            <div class="container text-center">
+                <h2><u>Projects (With GitHub Links)</u></h2>
+                <ul class="list-unstyled">
+                    <li><a href="https://github.com/PradeepKumar-123456/Hospital-bill-management" target="_blank">Hospital Management</a></li>
+                    <li><a href="https://github.com/PradeepKumar-123456/Hotel-room-booking-system" target="_blank">Hotel Room Booking Using C++</a></li>
+                    <li><a href="https://github.com/PradeepKumar-123456/Bank-management-system" target="_blank">Bank Management System Using DSA</a></li>
+                    </ul>
+                  </div>
+              </section>
+      
+              <section id="contact" >
+                  <div class="container">
+                      <h2><u>Contact</u></h2>
+                      <p>Name: A Pradeep Kumar</p>
+                      <p>Phone: 9493284889</p>
+                      <p>Email: pradeepkumar_alamanda@srmap.edu.in</p>
+                      <p>Address: 24-7/6, Ramalingeshwar Nagar, Vijayawada, Andhra Pradesh-520013</p>
+                      <div class="social-icons">
+                          <a href="https://github.com/PradeepKumar-123456" target="_blank"><img src="github.png" alt="GitHub"></a>
+                          <a href="https://www.linkedin.com/in/pradeep-kumar-alamanda-642912258/" target="_blank"><img src="LinkedIn_logo_initials.png" alt="LinkedIn"></a>
+                          <a href="https://leetcode.com/Pradeep_Kumar1234/" target="_blank"><img src="LeetCode_logo_black.png" alt="LeetCode"></a>
+                          <a href="https://www.codechef.com/users/pradeepkumar05" target="_blank"><img src="cod.png" alt="CodeChef"></a>
+                          <a href="mailto:pradeepkumar_alamanda@srmap.edu.in" target="_blank"><img src="https://i.pinimg.com/736x/23/da/b9/23dab92cbddac8b9ae00db6dd345644d.jpg" alt="Email"></a>
+                      </div>
+                  </div>
+              </section>
+          </main>
+      
+          <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+          <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+          <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+          <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+          <script>
+              var typed = new Typed('#element', {
+                  strings: ['Student', 'Programmer', 'Website Designer', 'Web App Developer'],
+                  typeSpeed: 100,
+              });
+          </script>
+      </body>
+      
+      </html>
